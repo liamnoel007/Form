@@ -10,6 +10,10 @@ body {
   background: #46495c;
 }
 
+h1 {
+  font-family: Open Sans, Helvetica, sans-serif;
+}
+
 .main {
   height: 100vh;
   display: flex;
@@ -52,6 +56,10 @@ label {
   gap: 4px;
 }
 
+span {
+  font-family: Gotham Pro, Courier, monospace;
+}
+
 input {
   height: 64px;
   border-radius: 8px;
@@ -64,6 +72,7 @@ button {
   border-radius: 14px;
   width: 480px;
   color: #ffffff;
+  font-family: Gotham Pro, Courier, monospace;
   font-size: 20px;
   line-height: 26px;
   border: 1px solid transparent;

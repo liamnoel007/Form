@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="main">
-      <div class="container">
-        <form class="form">
-          <h1 class="form__title">Форма обратной связи</h1>
-          <div class="form__inputs">
-            <label> <span>Имя</span><input type="text" name="name" /> </label>
-            <label>
-              <span>Email</span><input type="email" name="email" />
-            </label>
-            <label>
-              <span>Телефон</span> <input type="tel" name="phone"
-            /></label>
-          </div>
-          <div class="form__button">
-            <button class="form__button" type="submit">Отправить</button>
-          </div>
-        </form>
-      </div>
+        <div class="container">
+            <form class="form">
+                <h1 class="form__title">Форма обратной связи</h1>
+                <div class="form__inputs">
+                    <label>
+                        <span>Имя</span>
+                        <input type="text" name="name" />
+                    </label>
+                    <label>
+                        <span>Email</span>
+                        <input type="email" name="email" />
+                    </label>
+                    <label>
+                        <span>Телефон</span>
+                        <input type="tel" name="phone" />
+                    </label>
+                </div>
+                <!-- убрал блок-обвертку -->
+                <button class="form__button" type="submit">Отправить</button>
+            </form>
+        </div>
     </div>
-  </body>
+</body>
+
 </html>

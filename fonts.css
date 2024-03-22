@@ -1,22 +1,14 @@
 @font-face {
-  font-family: Gotham Pro;
+  font-family: 'Gotham Pro';
   src: url("./fonts/gothampro.ttf");
 }
 
-/* 
-    давай уберем импорты с гугл фонтс, скачаем их локально и добавим через font-face
-    используется только три шрифта, соответсвенно должны быть font-face с тремя названиями:
-    'Gotham Pro', 'Open Sans', 'Gothic A1'
-    для каждой дирности должен быть свой font-face
-    
-*/
-
 @font-face {
-  font-family: Open Sans;
+  font-family: 'Open Sans';
   src: url("./fonts/OpenSans-Regular.ttf");
 }
 
 @font-face {
-  font-family: Gothic A1;
+  font-family: 'Gothic A1';
   src: url("./fonts/GothicA1-Regular.ttf");
 }

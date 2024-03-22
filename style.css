@@ -61,9 +61,11 @@ span {
 }
 
 input {
+  padding: 10px;
   height: 64px;
   border-radius: 8px;
   border: 1px solid #c9ccdd;
+  outline: none;
 }
 
 button {

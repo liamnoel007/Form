@@ -107,4 +107,5 @@ button:hover {
 
 button:active {
   transform: scale(0.8);
+  color: #ff5721;
 }

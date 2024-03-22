@@ -6,6 +6,14 @@
   src: url("./fonts/gothampro.ttf");
 }
 
+/* 
+    давай уберем импорты с гугл фонтс, скачаем их локально и добавим через font-face
+    используется только три шрифта, соответсвенно должны быть font-face с тремя названиями:
+    'Gotham Pro', 'Open Sans', 'Gothic A1'
+    для каждой дирности должен быть свой font-face
+    
+*/
+
 .open-sans-regular {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;

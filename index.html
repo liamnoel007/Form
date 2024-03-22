@@ -1,34 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="main">
-      <div class="container">
-        <div class="form">
-          <div class="form__title">
-            <h1 class="open-sans-regular">Форма обратной связи</h1>
-          </div>
-          <div class="form__inputs">
-            <label class="gotham-pro-regular">
-              <span>Имя</span><input type="text" name="name" />
-            </label>
-            <label class="gothic-a1-regular">
-              <span>Email</span><input type="email" name="email" />
-            </label>
-            <label class="gothic-a1-regular">
-              <span>Телефон</span> <input type="tel" name="phone"
-            /></label>
-          </div>
-          <div class="form__button">
-            <button class="gotham-pro-regular">Отправить</button>
-          </div>
+        <div class="container">
+            <!-- 
+                на форму вешаем тег form 
+                тег form проходится по форме находит все инпуты по name и отправляет их 
+            -->
+            <form class="form">
+                <!-- Нам не нужно создать здесь блок-обвертку, класс вешается прямо на h1 рядом с классом шрифта, класс шрифта должен быть как модификатор по бэму, а вообще я бы здесь шрифт не выносил в класс а просто задал бы для всех h1 свойство font-family: "Open Sans", sans-serif-->
+                <div class="form__title">
+                    <h1 class="open-sans-regular">Форма обратной связи</h1>
+                </div>
+                <div class="form__inputs">
+                    <!-- очень странно, что здесь используется два шрифта готам про и готик а1, логически это одинаковые элементы, больше похоже на ошибку дизайнера,  -->
+                    <label class="gotham-pro-regular">
+                        <span>Имя</span>
+                        <input type="text" name="name" />
+                    </label>
+                    <label class="gothic-a1-regular">
+                        <span>Email</span>
+                        <input type="email" name="email" />
+                    </label>
+                    <label class="gothic-a1-regular">
+                        <span>Телефон</span>
+                        <input type="tel" name="phone" />
+                    </label>
+                </div>
+                <!-- Здесь тоже не нужен блок обвертка, класс вешается именно на кнопку 
+                    Так как кнопка находится внутри тега form можно было бы повешать атрибут type="submit", 
+                    в форме он как правило вешается автоматически, но следует помнить что если в форме находится несколько кнопок,
+                    то нужно через атрибут какая кнопка за что отвечает. submit - отправка формы, reset - сброс инпутов, button - любая другая кнопка. Если не укажешь на другие кнопки атрибут type="button", они все будут отправлять форму
+
+                    Шрифт тоже можно не выносить в класс а просто задать в свойство тега button
+                -->
+                <div class="form__button">
+                    <button class="gotham-pro-regular">Отправить</button>
+                </div>
+            </form>
         </div>
-      </div>
     </div>
-  </body>
+</body>
+
 </html>

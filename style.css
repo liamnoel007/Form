@@ -22,6 +22,8 @@ h1 {
 }
 
 .container {
+  padding: 24px;
+
   margin: 0 auto;
   /* padding: 64px 124px; */
   /* background: #ffffff; */
@@ -85,7 +87,7 @@ input:focus {
 }
 
 button {
-  padding: 29px;
+  padding: 23px;
   background: #ff5721;
   border-radius: 14px;
   width: 100%;
@@ -111,8 +113,17 @@ button:active {
 }
 
 @media (max-width: 640px) {
+  .form {
+    padding: 20px;
+  }
+  input {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 320px) {
   .container {
-    width: 90%;
+    padding: 16px;
   }
   .form {
     padding: 20px;

@@ -6,24 +6,29 @@
     <title>Form</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <div class="main">
       <div class="container">
-        <div class="form">
-          <h1 class="open-sans-regular">Форма обратной связи</h1>
-          <div class="inputs">
-            <label class="gotham-pro-regular">
-              Имя<input type="text" name="name" />
+        <form class="form">
+          <h1 class="form__title">Форма обратной связи</h1>
+          <div class="form__inputs">
+            <label>
+              <span>Имя</span>
+              <input type="text" name="name" />
             </label>
-            <label class="gothic-a1-regular">
-              Email<input type="email" name="email" />
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" />
             </label>
-            <label class="gothic-a1-regular">
-              Телефон <input type="tel" name="phone"
-            /></label>
+            <label>
+              <span>Телефон</span>
+              <input type="tel" name="phone" />
+            </label>
           </div>
-          <button class="gotham-pro-regular">Отправить</button>
-        </div>
+          <!-- убрал блок-обвертку -->
+          <button class="form__button" type="submit">Отправить</button>
+        </form>
       </div>
     </div>
   </body>
